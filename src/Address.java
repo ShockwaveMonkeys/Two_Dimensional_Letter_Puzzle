@@ -18,7 +18,7 @@
 
 public class Address {
 	
-	private void search8(int row, int col, char[][] puzzle, String word){
+	public void search8(int row, int col, char[][] puzzle, String word){
 		int i=0, j=0, w=0;		// using in for loop. i->col, j->row, w->word.charAt(w)
 		int wordChecker;		// counter in level 3;
 		
