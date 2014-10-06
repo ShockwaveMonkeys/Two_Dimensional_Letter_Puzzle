@@ -6,8 +6,8 @@ public class WordPuzzleTester {
 	public static void main(String[] arg){
 		
 		
-		int rows = 4;
-		int columns = 4;
+		int rows = 8;
+		int columns = 8;
 		char[][] map;
 		ArrayList<String> words = new ArrayList<>();
 		

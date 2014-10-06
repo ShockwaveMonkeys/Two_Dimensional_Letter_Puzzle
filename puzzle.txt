@@ -1,6 +1,6 @@
-f d o g
-i t g a
-s a a b
-h c f i
+f d o g c b t e
+i t g a s a u b
+s a a b c a t t
+h c f i h s i f
 
 cat dog fish
