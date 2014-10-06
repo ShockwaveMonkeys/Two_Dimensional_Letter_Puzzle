@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 /*
  * Created: 	Oct 02, 2014
  * Author: 		Younggun Chung
@@ -16,9 +18,40 @@
  * 
  */
 
+
 public class Address {
 	
-	public void search8(int row, int col, char[][] puzzle, String word){
+	/*Instance Variables*/
+	private char[][] puzzle;
+	private ArrayList<String> wordList;
+	private int row;
+	private int col;
+	
+	/*
+	 * Constructor
+	 */
+	public Address(int row, int column, char[][] puzzle, ArrayList<String> words){
+		this.puzzle = puzzle;
+		this.wordList = words;
+		this.row = row;
+		this.col = column;
+	}
+	/*
+	 * Finds the words in the arraylist of words
+	 */
+	
+	public void searchList(){
+		for(String word: wordList){
+			search8(word);
+		}
+	}
+	
+	
+	/*
+	 * Searching for words in the word puzzle
+	 */
+	//public void search8(int row, int col, char[][] puzzle, String word){
+	public void search8(String word){
 		int i=0, j=0, w=0;		// using in for loop. i->col, j->row, w->word.charAt(w)
 		int wordChecker;		// counter in level 3;
 		
